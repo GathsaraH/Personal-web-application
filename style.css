@@ -4144,3 +4144,70 @@ input[type='submit']:hover {
 
 @media (max-width: 1200px) {
 }
+
+/*Smooth Scroll*/
+   a[id= "one"]:target ~ #one {
+       -webkit-transform: translate3d(0, 0, 0);
+       transform: translate3d(0, 0, 0);
+   }
+
+a[id= "two"]:target ~ #two {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+a[id= "three"]:target ~ #three {
+    -webkit-transform: translate3d(0, -200%, 0);
+    transform: translate3d(0, -200%, 0);
+}
+
+
+
+
+
+
+
+/*-------------------For Page Animation------------------------*/
+
+
+.flip-2-hor-top-2 {
+    -webkit-animation: flip-2-hor-top-2 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: flip-2-hor-top-2 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+
+@-webkit-keyframes flip-2-hor-top-2 {
+    0% {
+        -webkit-transform: translateY(0) rotateX(0);
+        transform: translateY(0) rotateX(0);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+    }
+    100% {
+        -webkit-transform: translateY(-100%) rotateX(180deg);
+        transform: translateY(-100%) rotateX(180deg);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+}
+@keyframes flip-2-hor-top-2 {
+    0% {
+        -webkit-transform: translateY(0) rotateX(0);
+        transform: translateY(0) rotateX(0);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+    }
+    100% {
+        -webkit-transform: translateY(-100%) rotateX(180deg);
+        transform: translateY(-100%) rotateX(180deg);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+}
+
+
+
+.animated {
+    -webkit-animation: flip-2-hor-top-2 0.5s linear both;
+    animation: flip-2-hor-top-2 0.5s linear both;
+}
