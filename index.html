@@ -3,46 +3,47 @@
 
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="assest/fontawesome-free-5.15.2-web/css/all.min.css"/>
-    <link rel="stylesheet" href="assest/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="assest/fontawesome-free-5.15.2-web/css/all.min.css" rel="stylesheet"/>
+    <link href="assest/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="responsiveSheet.css" rel="stylesheet">
     <link
-            rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            rel="stylesheet"
     />
-    <link rel="stylesheet" href="script.js">
+    <link href="script.js" rel="stylesheet">
     <title>Gathsara Umesh</title>
 </head>
 
 <body>
 
-<input type="checkbox" id="check">
+<input id="check" type="checkbox">
 <label class="nav-bar" for="check">
     <i class="fas fa-bars" id="btn"></i>
     <i class="fas fa-times" id="cancel"></i>
 </label>
 <div class="sidebar">
 
-    <a onclick=" forPageOne()" href="#MainPage" class="active">
+    <a class="active" href="#MainPage" onclick=" forPageOne()">
         <i class="fas fa-qrcode"></i>
         <span>Dashboard</span>
     </a>
 
-    <a onclick="forPage02()" href="#About-Me">
+    <a href="#About-Me" onclick="forPage02()">
         <i class="fas fa-link"></i>
         <span>Shortcuts</span>
     </a>
-    <a onclick="forPage04()" href="#Skill">
+    <a href="#Skill" onclick="forPage04()">
         <i class="fas fa-stream"></i>
         <span>Overview</span>
     </a>
-    <a onclick="forPage03()" href="#Service">
+    <a href="#Service" onclick="forPage03()">
         <i class="fas fa-calendar"></i>
         <span>Events</span>
     </a>
-    <a onclick="forPage05()" href="#Contact">
+    <a href="#Contact" onclick="forPage05()">
         <i class="far fa-question-circle"></i>
         <span>About</span>
     </a>
@@ -60,7 +61,7 @@
 <section class="main">
 </section>
 <section class="main-borser">
-    <img src="assest/img/38405307_2117162115210620_13891758186299392_n.jpg" alt="" class="my-image"/>
+    <img alt="" class="my-image" src="assest/img/38405307_2117162115210620_13891758186299392_n.jpg"/>
 
     <h1 class="name">Gathsara Umesh</h1>
     <h1 class="job">Web Designer</h1>
@@ -89,12 +90,12 @@
         </ul>
     </div>
     <div class="header-buttons">
-        <a href="#" target="_self" class="btn btn-primary">Download CV</a>
+        <a class="btn btn-primary" href="#" target="_self">Download CV</a>
     </div>
     <div class="copyrights">© 2020 All rights reserved.</div>
 
     <!-- ----------------------------PAGE 02 START HEARE------------------------------------------ -->
-    <section id="MainPage" class="page-01">
+    <section class="page-01" id="MainPage">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="title-block">
@@ -115,7 +116,7 @@
     </section>
     <!-- ------------------------PAGE 02 ----------------------------------------- -->
 
-    <section id="About-Me" class="main-page-03">
+    <section class="main-page-03" id="About-Me">
         <h1 class="myself">About Me</h1>
         <!-- <h1 class="myself">#</h1> -->
         <div class="container-fluid">
@@ -235,7 +236,7 @@
 
 
     <!-- ------------------------PAGE - 03 ---------------------------------------- -->
-    <section id="Service" class="main-page-04">
+    <section class="main-page-04" id="Service">
         <div class="row">
             <div class="col-sm">
 
@@ -243,40 +244,40 @@
                     <section class="main5">
                         <div class="gallery-wrap">
                             <h1>My Works</h1>
-                            <input type="radio" id="blue" name="color"/>
+                            <input id="blue" name="color" type="radio"/>
                             <label for="blue">WEBDESING</label>
-                            <input type="radio" id="green" name="color"/>
+                            <input id="green" name="color" type="radio"/>
                             <label for="green">SYSTEM</label>
-                            <input type="radio" id="red" name="color"/>
+                            <input id="red" name="color" type="radio"/>
                             <label for="red">WORDPRESS</label>
-                            <input type="radio" id="reset" checked="checked" name="color"/>
+                            <input checked="checked" id="reset" name="color" type="radio"/>
                             <label for="reset">ALL PROJECTS</label>
                             <div class="clr"></div>
 
 
                             <!-- <div onclick="location.href='https://github.com/GathsaraH/Boostrap-super-market-pos-system';"class="gallry-image blue">&nbsp;-->
-                            <div onclick="window.open('https://github.com/GathsaraH/Boostrap-super-market-pos-system','mywindow');"
-                                 class="gallry-image blue">&nbsp;
-                                <img src="assest/img/Web01.PNG" alt=""/>
+                            <div class="gallry-image blue"
+                                 onclick="window.open('https://github.com/GathsaraH/Boostrap-super-market-pos-system','mywindow');">&nbsp;
+                                <img alt="" src="assest/img/Web01.PNG"/>
                             </div>
                             <div class="gallry-image green">
-                                <img src="assest/img/web2.PNG" alt=""/>
+                                <img alt="" src="assest/img/web2.PNG"/>
                                 <!--                  <li><a href="https://github.com/GathsaraH/Boostrap-super-market-pos-system"></a></li>-->
                             </div>
                             <div class="gallry-image red">
-                                <img src="assest/img/P01.PNG" alt=""/>
+                                <img alt="" src="assest/img/P01.PNG"/>
                             </div>
                             <div class="gallry-image blue">
-                                <img src="assests/img/gallry/g4.png" alt=""/>
+                                <img alt="" src="assests/img/gallry/g4.png"/>
                             </div>
                             <div class="gallry-image green">
-                                <img src="assests/img/gallry/g5.png" alt=""/>
+                                <img alt="" src="assests/img/gallry/g5.png"/>
                             </div>
                             <div class="gallry-image red">
-                                <img src="assests/img/gallry/g7.jpg" alt=""/>
+                                <img alt="" src="assests/img/gallry/g7.jpg"/>
                             </div>
                             <div class="gallry-image blue">
-                                <img src="assests/img/gallry/g10.jpg" alt=""/>
+                                <img alt="" src="assests/img/gallry/g10.jpg"/>
                             </div>
                             <div class="clr"></div>
                         </div>
@@ -290,7 +291,7 @@
 
     <!-- ------------------------PAGE - 04 ---------------------------------------- -->
 
-    <section id="Skill" class="main-page-05">
+    <section class="main-page-05" id="Skill">
         <h1 class="resume1">Resu</h1>
         <h1 class="resume2">me</h1>
         <h3 class="Education">Education</h3>
@@ -483,7 +484,7 @@
     </section>
 
 
-    <section id="Contact" class="main-page-06">
+    <section class="main-page-06" id="Contact">
         <h1 class="Contact">Contact</h1>
 
         <div class="main-all-contact">
@@ -509,10 +510,10 @@
         <div class="container" id="contact-forum">
             <form action="/action_page.php">
 
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input id="fname" name="firstname" placeholder="Your name.." type="text">
 
 
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <input id="lname" name="lastname" placeholder="Your last name.." type="text">
 
 
                 <select id="country" name="country">
@@ -539,24 +540,24 @@
             <li><a onclick="document.getElementById('MainPage').style.zIndex = '500'" href="#MainPage"><i class="fas fa-home"></i></a></li> -->
 
 
-            <li><a onclick=" forPageOne()" href="#MainPage"><i class="fas fa-home"></i></a></li>
+            <li><a href="#MainPage" onclick=" forPageOne()"><i class="fas fa-home"></i></a></li>
 
 
             <!-- <li><a   onclick="document.getElementById('About-Me').style.zIndex = '400'" href="#About-Me"><i class="fas fa-user-alt"></i></a></li> -->
 
-            <li><a onclick="forPage02()" href="#About-Me"><i class="fas fa-user-alt"></i></a></li>
+            <li><a href="#About-Me" onclick="forPage02()"><i class="fas fa-user-alt"></i></a></li>
 
 
             <!-- <li><a onclick="document.getElementById('pa-03').style.zIndex = '100'" href="#pa-01"><i class="fas fa-briefcase"></i></a></li> -->
 
 
-            <li><a onclick="forPage04()" href="#Skill"><i class="fas fa-graduation-cap"></i></a></li>
+            <li><a href="#Skill" onclick="forPage04()"><i class="fas fa-graduation-cap"></i></a></li>
 
 
-            <li><a onclick="forPage03()" href="#Service"><i class="fas fa-briefcase"></i></a></li>
+            <li><a href="#Service" onclick="forPage03()"><i class="fas fa-briefcase"></i></a></li>
 
 
-            <li><a onclick="forPage05()" href="#Contact"><i class="fas fa-address-card"></i></a></li>
+            <li><a href="#Contact" onclick="forPage05()"><i class="fas fa-address-card"></i></a></li>
 
 
         </div>
@@ -566,7 +567,7 @@
 </section>
 <script src="script.js"></script>
 
-<img src="assest/img/main_bg.png" alt="" class="main-bg"/>
+<img alt="" class="main-bg" src="assest/img/main_bg.png"/>
 </section>
 
 <script src="assest/bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js">
